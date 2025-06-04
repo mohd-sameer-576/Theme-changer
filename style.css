@@ -11,6 +11,7 @@
     justify-content: center;
     align-items: center;
     background-color: #f0f0f0;
+    transition: all 0.5s ease;
 }
 .container h1{
     font-size: 5rem;
@@ -35,6 +36,9 @@
     background-color: #333;
     color: white;
     transition: transform 0.3s ease;
+}
+.container .color-selector button:active{
+    transform: scale(1.1);
 }
 .container .color-selector input{
     width: 100%;
