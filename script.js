@@ -3,15 +3,16 @@ let applybtn = document.querySelector('.apply-btn');
 let colorInput = document.querySelector('#colorInput');
 let color = document.querySelector('.color');
 let container = document.querySelector('.container');
-const colorChanger = (color) => {
-    container.style.backgroundColor = color;
+const colorChanger = (givencolor) => {
+    container.style.backgroundColor = givencolor;
+    color.innerText = givencolor;
 }
 const rondombtnclick = () => {
     console.log("Random button clicked");
 }
 const applybtnclick = () => {
-    const color = colorInput.value;
-    colorChanger(color);
+    const givencolor = colorInput.value;
+    colorChanger(givencolor);
 }
 
 randombtn.addEventListener('click', rondombtnclick);
